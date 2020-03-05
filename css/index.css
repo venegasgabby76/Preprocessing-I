@@ -134,31 +134,40 @@ html,
 body {
   height: 100%;
 }
-* {
-  width: 800;
-  margin: auto;
+.intro {
+  width: 800px;
+  margin: 50px auto;
 }
-nav {
+.intro nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   font-size: 20px;
-  border: 1px solid black;
-  width: 90%;
-  margin: 5%;
 }
-.intro {
-  border: 1px solid black;
+.intro nav a {
+  text-decoration: none;
+  color: pink;
+}
+.about-me {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
-  padding: 55px 55px;
-  font-size: 15px;
-  word-spacing: 5%;
-  margin: 5px;
+  justify-content: center;
+  width: 800px;
+  margin: 50px auto;
 }
-h2 {
-  font-size: 25px;
-  padding-bottom: 10px;
+.about-me h2 {
+  display: flex;
+  font-size: 2.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+.general {
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+h3 {
+  font-size: 1.2rem;
+  text-align: justify;
 }
