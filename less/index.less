@@ -93,74 +93,114 @@ html, body {
 
 
 
+	// this is one of my mixins.	
+	.paragraphText {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 800px; 
+		margin: 50px auto; 
+		color: thistle;
+	}
+
+	.insideParagraph {
+		font-size: 1.2rem;
+		text-align: justify;
+		padding: .5em;
+		border-bottom: 1px solid white;
+	}
+
+@fontCursive : cursive;
+	
+@colorOne : indigo;
+
+@colorTwo : mediumpurple;
+
+
+//this is where my actual code starts
+
+	* {
+		background-color: black;
+	}
+
+
 .intro {
 	width: 800px; 
 	margin: 50px auto; 
-	font-family: Palatino;
+	
+
 
 	nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	font-size: 20px;
-	
 
+	
+	
 	a {
 		text-decoration: none;
-		color: pink;
-
-
-	
-
-				
+		color: colorOne;
+		
 			}
 		}	
 	}	
 
 
 .about-me {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 800px; 
-	margin: 50px auto; 
+	.paragraphText();
 
 	h2 {
 		display: flex;
   		font-size: 2.5em;
   		margin-top: 0.83em;
-  		margin-bottom: 0.83em;
-	p {
+		margin-bottom: 0.83em;
+		border-bottom: 1px solid white;
 	
-
-
 	
-		}
+	
 	}	
 }
 
-
 .general {
-	width: 800px; 
-	margin: 50px auto; 
-	display: flex;
-	flex-direction: column;
-	font-family: Palatino;
-	background-color: yellow;
+	
+	.paragraphText();
 
 	h3 {
-		font-size: 1.2rem;
-		text-align: justify;
-
+		.insideParagraph ();
+		color: @colorTwo;
 		}
 	}
 
 
 
 .work {
-	width:800px; 
-	margin: 50px auto; 
-	display: flex;
-	flex-direction: column;
-	font-family: Palatino;
+	
+	.paragraphText();
+	
+	h3 {
+		.insideParagraph ();
+		color: @colorTwo;
+	
+		h4 {
+			font-size: 1.2rem;
+			text-align: justify;
+			padding: .5em;
+			color: @colorTwo;
+		}
+	}
+
 }	
+
+
+footer {
+
+	.paragraphText();
+
+	h3 {
+	
+		.insideParagraph ();
+		color: @colorTwo;
+	}
+
+}

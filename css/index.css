@@ -134,10 +134,26 @@ html,
 body {
   height: 100%;
 }
+.paragraphText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  margin: 50px auto;
+  color: thistle;
+}
+.insideParagraph {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 0.5em;
+  border-bottom: 1px solid white;
+}
+* {
+  background-color: black;
+}
 .intro {
   width: 800px;
   margin: 50px auto;
-  font-family: Palatino;
 }
 .intro nav {
   display: flex;
@@ -147,7 +163,7 @@ body {
 }
 .intro nav a {
   text-decoration: none;
-  color: pink;
+  color: colorOne;
 }
 .about-me {
   display: flex;
@@ -155,29 +171,63 @@ body {
   justify-content: center;
   width: 800px;
   margin: 50px auto;
+  color: thistle;
 }
 .about-me h2 {
   display: flex;
   font-size: 2.5em;
   margin-top: 0.83em;
   margin-bottom: 0.83em;
+  border-bottom: 1px solid white;
 }
 .general {
-  width: 800px;
-  margin: 50px auto;
   display: flex;
   flex-direction: column;
-  font-family: Palatino;
-  background-color: yellow;
+  justify-content: center;
+  width: 800px;
+  margin: 50px auto;
+  color: thistle;
 }
 .general h3 {
   font-size: 1.2rem;
   text-align: justify;
+  padding: 0.5em;
+  border-bottom: 1px solid white;
+  color: mediumpurple;
 }
 .work {
-  width: 800px;
-  margin: 50px auto;
   display: flex;
   flex-direction: column;
-  font-family: Palatino;
+  justify-content: center;
+  width: 800px;
+  margin: 50px auto;
+  color: thistle;
+}
+.work h3 {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 0.5em;
+  border-bottom: 1px solid white;
+  color: mediumpurple;
+}
+.work h3 h4 {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 0.5em;
+  color: mediumpurple;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  margin: 50px auto;
+  color: thistle;
+}
+footer h3 {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 0.5em;
+  border-bottom: 1px solid white;
+  color: mediumpurple;
 }
